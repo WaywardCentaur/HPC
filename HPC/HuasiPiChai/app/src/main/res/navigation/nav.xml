@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/login">
+
+    <activity
+        android:id="@+id/login"
+        android:name="usfq.proyecto.huasipichai.Login"
+        android:label="act_login"
+        tools:layout="@layout/act_login" />
+    <fragment
+        android:id="@+id/registration"
+        android:name="usfq.proyecto.huasipichai.ui.registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/eventDetail"
+        android:name="usfq.proyecto.huasipichai.ui.eventDetail"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" />
+    <fragment
+        android:id="@+id/eventShow"
+        android:name="usfq.proyecto.huasipichai.ui.eventShow"
+        android:label="fragment_event_show"
+        tools:layout="@layout/fragment_event_show" />
+    <fragment
+        android:id="@+id/eventCreation"
+        android:name="usfq.proyecto.huasipichai.ui.eventCreation"
+        android:label="fragment_event_creation"
+        tools:layout="@layout/fragment_event_creation" />
+</navigation>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "950459383932",
+    "firebase_url": "https://huasi-c2d8c.firebaseio.com",
+    "project_id": "huasi-c2d8c",
+    "storage_bucket": "huasi-c2d8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950459383932:android:7232b4ac1a1660ab",
+        "android_client_info": {
+          "package_name": "usfq.proyecto.huasipichai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950459383932-473g08dnlq0pv7ujndr1ho29q8tvqv9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH36gJISu4AX_Q_TCqexoygDk-eTgf-7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
