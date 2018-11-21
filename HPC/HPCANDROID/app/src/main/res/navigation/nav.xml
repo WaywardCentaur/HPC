@@ -5,16 +5,15 @@
     android:id="@+id/nav"
     app:startDestination="@id/login">
 
-    <activity
-        android:id="@+id/login"
-        android:name="usfq.proyecto.huasipichai.Login"
-        android:label="act_login"
-        tools:layout="@layout/act_login" />
     <fragment
         android:id="@+id/registration"
         android:name="usfq.proyecto.huasipichai.ui.registration"
         android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_eventShow"
+            app:destination="@id/eventShow" />
+    </fragment>
     <fragment
         android:id="@+id/eventDetail"
         android:name="usfq.proyecto.huasipichai.ui.eventDetail"
@@ -24,10 +23,31 @@
         android:id="@+id/eventShow"
         android:name="usfq.proyecto.huasipichai.ui.eventShow"
         android:label="fragment_event_show"
-        tools:layout="@layout/fragment_event_show" />
+        tools:layout="@layout/fragment_event_show" >
+        <action
+            android:id="@+id/action_eventShow_to_eventDetail"
+            app:destination="@id/eventDetail" />
+        <action
+            android:id="@+id/action_eventShow_to_eventCreation"
+            app:destination="@id/eventCreation" />
+    </fragment>
     <fragment
         android:id="@+id/eventCreation"
         android:name="usfq.proyecto.huasipichai.ui.eventCreation"
         android:label="fragment_event_creation"
         tools:layout="@layout/fragment_event_creation" />
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/login">
+        <activity
+            android:id="@+id/login"
+            android:name="usfq.proyecto.huasipichai.LoginAc"
+            android:label="act_login"
+            tools:layout="@layout/act_login" />
+        <action
+            android:id="@+id/action_global_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_global_eventShow"
+            app:destination="@id/eventShow" />
+    </navigation>
 </navigation>

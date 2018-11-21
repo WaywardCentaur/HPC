@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HuasiPiChai.iml" filepath="$PROJECT_DIR$/HuasiPiChai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HPCANDROID.iml" filepath="$PROJECT_DIR$/HPCANDROID.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
